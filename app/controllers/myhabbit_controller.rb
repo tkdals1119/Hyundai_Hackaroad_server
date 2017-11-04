@@ -20,4 +20,10 @@ class MyhabbitController < ApplicationController
         #                 render json: @habbitname
         end
     end
+    
+    def send_list
+        @list=Myhabbit.all
+        
+        render json: @list
+    end
 end

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
  get "/driver/:userid/get_name" => "loginusers#get_name"
  
  get "/driver/:habbitid/get_habbitname" => "myhabbit#get_habbitname"
+ get "/driver/get_list" => "myhabbit#send_list"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
