@@ -3,6 +3,8 @@ Rails.application.routes.draw do
  post "/loginusers" => "loginusers#create"
  get "/driver/check_duplicate" => "loginusers#check"
  get "/driver/:userid/get_name" => "loginusers#get_name"
+ 
+ get "/driver/:habbitid/get_habbitname" => "myhabbit#get_habbitname"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
