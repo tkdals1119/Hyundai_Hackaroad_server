@@ -73,7 +73,7 @@ class LoginusersController < ApplicationController
         format.html { redirect_to @loginuser, notice: 'Loginuser was successfully updated.' }
         format.json { render :show, status: :ok, location: @loginuser }
       else
-        format.html { render :edit }
+        format.html { r0ender :edit }
         format.json { render json: @loginuser.errors, status: :unprocessable_entity }
       end
     end
